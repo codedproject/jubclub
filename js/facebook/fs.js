@@ -9,7 +9,7 @@
   var response2;
 
 
-  //function that will authenticate the user via Faabook, calling to the FB object
+  //function that will authenticate the user via Facebook, calling to the FB object
   function loginUser() {    
      FB.login(function(response) { }, {scope:'email, user_photos'});     
      }
