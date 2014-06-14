@@ -1,6 +1,6 @@
 //enter your API Key here (between the "")
 
-  var fbAPIKey="1457374264506133";
+  var fbAPIKey="289829801195635";
 
   //array that will store our first Facebook response with the user's info
   var response1;
