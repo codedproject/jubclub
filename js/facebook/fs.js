@@ -18,7 +18,7 @@
   window.fbAsyncInit = function() {
     FB.init({
       appId      : fbAPIKey, // App ID
-      channelUrl : 'http://www.jubclubhub-wjin.rhcloud.com/', // Channel File
+      channelUrl : 'http://jubclubhub-wjin.rhcloud.com/', // Channel File
       status     : true, // check login status
       cookie     : true, // enable cookies to allow the server to access the session
       xfbml      : true  // parse XFBML
