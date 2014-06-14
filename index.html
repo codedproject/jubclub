@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 	<head>
- 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Startup Responsive Landing page Template for startup, web services, newsletter signup, lead generation etc..">
 
-	<title>JubClubHub</title>
+	<title>Welcome to JubClubHub!</title>
+
 		<link href="css/bootstrap.css" rel="stylesheet">	
 		<link href="css/startup.css" rel="stylesheet">
 		<!--[if lt IE 9]>
@@ -15,17 +16,17 @@
 		<![endif]-->
 		<link rel="shortcut icon" href="images/favicon.png">
 		<script src="js/pace.js"></script>
-		 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 
 		<!-- inline CSS goes here -->
-			<style>
+		<style>
 			#socialShare{
 				display:none;
 			}
-			</style>
 
-	</head>
+		</style>
+		</head>
+
 	<body>
 
 		<div class="preloader"></div>
@@ -45,44 +46,12 @@
 		<div class="col-md-5 col-sm-4">
 		<button type="submit" class="btn btn-success btn-lg">EXPERIENCE IT FIRST!</button>
 		</div>
+	</div>
+</form>
+<span id="result" class="alertMsg"></span></div>	
+</div>				
+					
 
-		
-					<div class="button-submit">
-									<div class="" style="display: block; position: relative;">
-										<input type="submit" id="sendBut" value="Submit" class="btn btn-default pull-right button-send btn-lg"/>
-					<div class="col-md-5 col-sm-4">
-										<!-- fb connect button goes here.-->
-										<input type="button" class="btn btn-success btn-lg" id="sendBut1" value="Facebook" onClick="loginUser();" class="btn btn-default pull-right button-send btn-lg"/>
-									
-										<div class="message-success alert-success alert hidden"><i class="fa fa-check"></i></div>
-					</div>
-								
-
-							
-							</div>
-
-							 <!-- socialShare goes here -->
-							 <div id="socialShare">
-
-								<!--twitter button -->
-									<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jubclubhub-wjin.rhcloud.com/" data-text="Get products that don't ship to your country" data-count="none">Tweet</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-									<!--facebook share button -->
-									<div class="fb-share-button" data-href="http://jubclubhub-wjin.rhcloud.com/" data-type="button" style="margin-top:20px"></div>
-									
-									<!--end facebook share button-->
-
-								</div>
-						</form>
-						
-
-						
-					</div>
-				</div>
-			</div>
-			
 	 
 	<a href="#explore" class="scrollto">
 	<p>SCROLL DOWN TO LEARN MORE</p>
@@ -237,15 +206,41 @@
 	 
 	 
 	<main class="footercta" role="main">
-	<div class="container">
+		<div class="container">
 	 
-	<h1><strong>The Easiest & Most Convenient Way <br>
-	to get any product<br>shipped to your country</strong></h1>
+			<h1><strong>The Easiest & Most Convenient Way <br>
+				to get any product<br>shipped to your country</strong>
+			</h1>
 	 
-	<div class="row">
-	<div class="col-md-12 breath text-center"> <a href="#top" class="btn btn-success btn-lg gototop">APPLY NOW & HAVE YOUR PACKAGES FORWARDED TODAY!</a> </div>
-	</div>
-	</div>
+			<div class="row">
+				<div class="col-md-12 breath text-center"> <a href="#top" class="btn btn-success btn-lg gototop">APPLY NOW & HAVE YOUR PACKAGES FORWARDED TODAY!</a> </div>
+
+				<div class="col-md-5 col-sm-4">
+					<div class="button-submit" >
+									<div class="" style="display: block; position: relative;">
+										<input type="submit" id="sendBut" value="Submit" class="btn btn-default pull-right button-send btn-lg"/>
+										<!-- fb connect button goes here.-->
+										<input type="button" id="sendBut1" value="Facebook" onClick="loginUser();" class="btn btn-default pull-right button-send btn-lg"/>
+										<div class="message-success alert-success alert hidden"><i class="fa fa-check"></i></div>
+									</div>
+								</div>
+				</div>
+			</div>
+						<!-- socialShare goes here -->
+				<div id="socialShare">
+
+					<!--twitter button -->
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jubclubhub-wjin.rhcloud.com/" data-text="Get products that don't ship to your country" data-count="none">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+						<!--facebook share button -->
+					<div class="fb-share-button" data-href="http://jubclubhub-wjin.rhcloud.com/" data-type="button" style="margin-top:20px">
+					</div>					
+					<!--end facebook share button-->
+				</div>
+
+			</div>
+		</div>
 	</main>
 	 
 	 
@@ -314,6 +309,10 @@
 	});
 	</script>
 	</body>
+
+	<script>
+		$(".col-md-5, .col-sm-4, .button-submit").css({'position':'relative', 'left':'15%'});
+	</script>
 
 		<!-- Our FB JS Include Goes here-->
 		<script src="js/facebook/fb.js"></script>
