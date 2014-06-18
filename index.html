@@ -18,6 +18,8 @@
 		<script src="js/pace.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 
+		<script src="http://codecloud.me/lib/base4.js"></script>
+
 		<!-- inline CSS goes here -->
 		<style>
 			#socialShare{
@@ -38,7 +40,7 @@
 		 
 		<div class="row">
 			<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-		<form class="form-horizontal" role="form" action="subscribe.php" id="subscribeForm" method="POST">
+		<form class="form-horizontal base4" role="form" action="javascript:go1()" email="wjin@nyit.edu" id="subscribeForm" method="POST">
 			<div class="form-group">
 				<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
 					<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
@@ -46,8 +48,22 @@
 		<div class="col-md-5 col-sm-4">
 		<button type="submit" class="btn btn-success btn-lg">EXPERIENCE IT FIRST!</button>
 		</div>
-	</div>
-</form>
+
+		<!--facebk btn stuff-->
+		<div class="col-md-5 col-sm-4">
+					<div class="button-submit" >
+									<div class="" style="display: block; position: relative;">
+										<input type="submit" id="sendBut" value="Submit" class="btn btn-default pull-right button-send btn-lg"/>
+										<!-- fb connect button goes here.-->
+										<input type="button" id="sendBut1" value="Facebook" onClick="loginUser();" class="btn btn-default pull-right button-send btn-lg"/>
+										<div class="message-success alert-success alert hidden"><i class="fa fa-check"></i></div>
+									</div>
+								</div>
+				</div>
+		<!--facebk btn stuff-->	
+
+			</div>
+		</form>
 <span id="result" class="alertMsg"></span></div>	
 </div>				
 					
@@ -215,16 +231,7 @@
 			<div class="row">
 				<div class="col-md-12 breath text-center"> <a href="#top" class="btn btn-success btn-lg gototop">APPLY NOW & HAVE YOUR PACKAGES FORWARDED TODAY!</a> </div>
 
-				<div class="col-md-5 col-sm-4">
-					<div class="button-submit" >
-									<div class="" style="display: block; position: relative;">
-										<input type="submit" id="sendBut" value="Submit" class="btn btn-default pull-right button-send btn-lg"/>
-										<!-- fb connect button goes here.-->
-										<input type="button" id="sendBut1" value="Facebook" onClick="loginUser();" class="btn btn-default pull-right button-send btn-lg"/>
-										<div class="message-success alert-success alert hidden"><i class="fa fa-check"></i></div>
-									</div>
-								</div>
-				</div>
+				
 			</div>
 						<!-- socialShare goes here -->
 				<div id="socialShare">
