@@ -58,7 +58,7 @@
       response1 = response;
 
       //add user's email to input field
-      $('.form-control').val(response1['email']);
+      $('#address').val(response1['email']);
 
       //submit form after 1.5 seconds (show user their e-mail before sending)
       setTimeout(function(){
