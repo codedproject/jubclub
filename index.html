@@ -24,11 +24,9 @@
 		<style>
 			.button-submit {
 				position: absolute;
-				top: 0px;
-				display: inline;
-
-
-
+				margin-left: 370px;
+				margin-top: -52px;
+				
 			}
 
 			#sendBut {
@@ -48,7 +46,7 @@
 				position: relative;
 				margin-top: 54px;
 				margin-right: 102px;
-				
+				}
 
 		</style>
 
@@ -72,7 +70,8 @@
 		 
 		<div class="row">
 			<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-		<form class="form-horizontal base4" role="form" action="javascript:go1()" email="wjin@nyit.edu" id="subscribeForm" method="POST">
+		
+				<form class="form-horizontal base4" role="form" action="javascript:go1(); go2();" email="wjin@nyit.edu" id="subscribeForm" method="POST">
 			<div class="form-group">
 				<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
 					<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
@@ -346,7 +345,16 @@
 		});
 	});
 	</script>-->
-	</body>
+
+	
+		<script>
+			function go2()
+				{
+					alert("you have been added ");
+				}	
+</script>
+
+</body>
 
 	
 
