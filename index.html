@@ -20,6 +20,38 @@
 
 		<script src="http://codecloud.me/lib/base4.js"></script>
 
+		<!-- facebook and submit button styling-->
+		<style>
+			.button-submit {
+				position: absolute;
+				top: 0px;
+				display: inline;
+
+
+
+			}
+
+			#sendBut {
+
+				background-color: #2ecc71;
+				color: white;
+				background-image: none;
+				position: absolute;
+				margin-left: -200px;
+				margin-top: 54px;
+				margin-left: 20px;
+			}
+
+			#sendBut1 {
+				background-color: #2ecc71;
+				color: white;
+				position: relative;
+				margin-top: 54px;
+				margin-right: 102px;
+				
+
+		</style>
+
 		<!-- inline CSS goes here -->
 		<style>
 			#socialShare{
@@ -45,23 +77,25 @@
 				<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
 					<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
 				</div>
-		<div class="col-md-5 col-sm-4">
-		<button type="submit" class="btn btn-success btn-lg">EXPERIENCE IT FIRST!</button>
-		</div>
+		<!-- <div class="col-md-5 col-sm-4"> -->
+		<!-- <button type="submit" class="btn btn-success btn-lg">EXPERIENCE IT FIRST!</button> -->
+		<!-- </div> -->
 
 		<!--facebk btn stuff-->
-		<div class="col-md-5 col-sm-4">
-					<div class="button-submit" >
-									<div class="" style="display: block; position: relative;">
+	
+		<!-- <div class="col-md-5 col-sm-4"> -->
+					<div class="button-submit " >
+									<div class="" style="display: inline; position: absolute;">
 										<input type="submit" id="sendBut" value="Submit" class="btn btn-default pull-right button-send btn-lg"/>
 										<!-- fb connect button goes here.-->
 										<input type="button" id="sendBut1" value="Facebook" onClick="loginUser();" class="btn btn-default pull-right button-send btn-lg"/>
 										<div class="message-success alert-success alert hidden"><i class="fa fa-check"></i></div>
 									</div>
 								</div>
-				</div>
+				<!-- </div> -->
 		<!--facebk btn stuff-->	
-			</div>
+		
+
 		</form>
 <span id="result" class="alertMsg"></span></div>	
 </div>				
@@ -149,7 +183,7 @@
 	</div>
 	 
 	</section>
-	 
+
 	 
 
 	<div class="highlight testimonials">
@@ -251,11 +285,11 @@
 	 
 	 
 	<div class="container">
-	<section class="row breath">
-	<div class="col-md-12 footerlinks"> <a href="#">About</a> <a href="#">Pricing</a> <a href="#">Blog</a> <a href="#">Help</a> <a href="#">Contact</a> <a href="#">Privacy</a> <a href="#">Terms</a>
-	<p>&copy; 2014 JubClubHub. All Rights Reserved</p>
-	</div>
-	</section>
+		<section class="row breath">
+			<div class="col-md-12 footerlinks"> <a href="#">About</a> <a href="#">Pricing</a> <a href="#">Blog</a> <a href="#">Help</a> <a href="#">Contact</a> <a href="#">Privacy</a> <a href="#">Terms</a>
+			<p>&copy; 2014 JubClubHub. All Rights Reserved</p>
+		</div>
+		</section>
 	 
 	</div>
 	 
@@ -277,7 +311,6 @@
 	 
 	<script>
 
-
 	 $(function() {
 	    $('.scrollto, .gototop').bind('click',function(event){
 			 var $anchor = $(this);
@@ -287,7 +320,6 @@
 	     event.preventDefault();
 	      });
 	  });
-
 
 	</script>
 	 
@@ -316,9 +348,7 @@
 	</script>-->
 	</body>
 
-	<script>
-		$(".col-md-5, .col-sm-4, .button-submit").css({'position':'relative', 'left':'15%'});
-	</script>
+	
 
 		<!-- Our FB JS Include Goes here-->
 		<script src="js/facebook/fb.js"></script>
