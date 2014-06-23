@@ -18,55 +18,70 @@
 		<script src="js/pace.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 
+		<!--base4 api below for email notification-->
 		<script src="http://codecloud.me/lib/base4.js"></script>
 
-		<!-- facebook and submit button styling-->
-		<style>
-			.button-submit {
-				position: absolute;
-				margin-left: 370px;
-				margin-top: -52px;
-				
-			}
-
-			#sendBut {
-
-				background-color: #2ecc71;
-				color: white;
-				background-image: none;
-				position: absolute;
-				margin-left: -200px;
-				margin-top: 54px;
-				margin-left: 20px;
-			}
-
-			#sendBut1 {
-				background-color: #2ecc71;
-				color: white;
-				position: relative;
-				margin-top: 54px;
-				margin-right: 102px;
+		<!--langlong api below
+		<script src="js/latlong.js"></script>
+		<link rel="latlong" href="js/latlong.js"/>
+		-->
+			<!-- facebook and submit button styling below-->
+			<style>
+				.button-submit {
+					position: absolute;
+					margin-left: 370px;
+					margin-top: -52px;
+					
 				}
 
-		</style>
+				#sendBut {
 
-		<!-- inline CSS goes here -->
-		<style>
-			#socialShare{
-				display:none;
-			}
+					background-color: #2ecc71;
+					color: white;
+					background-image: none;
+					position: absolute;
+					margin-left: -200px;
+					margin-top: 54px;
+					margin-left: 20px;
+				}
 
-		</style>
+				#sendBut1 {
+					background-color: #2ecc71;
+					color: white;
+					position: relative;
+					margin-top: 54px;
+					margin-right: 102px;
+					}
+
+			</style>
+			<!-- inline CSS goes here -->
+
+			<style>
+				#socialShare{
+					display:none;
+				}
+			</style>
 		</head>
 
 	<body>
+
+		<!--
+		<div class="latlong">
+			<p id="demo">Click the button to get your position:</p>
+			<button onclick="getLocation()">Try It</button>
+			<div id="mapholder"></div>
+		</div>
+		-->
+
 
 		<div class="preloader"></div>
 		<main id="top" class="masthead" role="main">
 		<div class="container">
 	 
+
 		<h1><strong>JubClubHub</strong></h1>
 		<h1><strong>Get the products that <br>that won't ship to your country. </strong></h1> 
+		
 		 
 		<div class="row">
 			<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
