@@ -301,11 +301,8 @@
 	 
 			<div class="row">
 				<div class="col-md-12 breath text-center"> <a href="#top" class="btn btn-success btn-lg gototop">APPLY NOW & HAVE YOUR PACKAGES FORWARDED TODAY!</a> </div>
-				
 			</div>
-					
-
-				</div>
+		</div>
 
 			</div>
 		</div>
@@ -318,11 +315,7 @@
 			<p>&copy; 2014 JubClubHub. All Rights Reserved</p>
 		</div>
 		</section>
-	 
 	</div>
-	 
-	 
-	 
 	 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
@@ -330,65 +323,75 @@
 	<script src="js/typer.js"></script>
 	<script src="js/nicescroll.js"></script>
 	<script src="js/ketchup.all.js"></script>
-	
-	<script>
-	    $(function () {
-	      $('[data-typer-targets]').typer();
-	    });
-	  </script>
+		
+			<script>
+		    $(function () {
+		      $('[data-typer-targets]').typer();
+		    });
+		  </script>
 	 
-	<script>
+			<script>
 
-	 $(function() {
-	    $('.scrollto, .gototop').bind('click',function(event){
-			 var $anchor = $(this);
-			 $('html, body').stop().animate({
-	         scrollTop: $($anchor.attr('href')).offset().top
-	          }, 1500,'easeInOutExpo');
-	     event.preventDefault();
-	      });
-	  });
+			 $(function() {
+			    $('.scrollto, .gototop').bind('click',function(event){
+					 var $anchor = $(this);
+					 $('html, body').stop().animate({
+			         scrollTop: $($anchor.attr('href')).offset().top
+			          }, 1500,'easeInOutExpo');
+			     event.preventDefault();
+			      });
+			  });
 
-	</script>
+			</script>
 	 
-	<!--<script> 
-	$(document).ready(function() {
-		$('#subscribeForm').ketchup().submit(function() {
-			if ($(this).ketchup('isValid')) {
-				var action = $(this).attr('action');
-				$.ajax({
-					url: action,
-					type: 'POST',
-					data: {
-						email: $('#address').val()
-					},
-					success: function(data){
-						$('#result').html(data);
-					},
-					error: function() {
-						$('#result').html('Sorry, an error occurred.');
+			<!--<script> 
+			$(document).ready(function() {
+				$('#subscribeForm').ketchup().submit(function() {
+					if ($(this).ketchup('isValid')) {
+						var action = $(this).attr('action');
+						$.ajax({
+							url: action,
+							type: 'POST',
+							data: {
+								email: $('#address').val()
+							},
+							success: function(data){
+								$('#result').html(data);
+							},
+							error: function() {
+								$('#result').html('Sorry, an error occurred.');
+							}
+						});
 					}
+					return false;
 				});
-			}
-			return false;
-		});
-	});
-	</script>-->
+			});
+			</script>-->
 
 	
-		<script>
-			function go2()
-				{
-					alert("You have been added!");
-				}	
-</script>
+			<script>
+				function go2()
+					{
+						alert("You have been added!");
+					}	
+			</script>
 
-</body>
+			<!--mouseflow script below-->
+			<script type="text/javascript">
+			   var _mfq = _mfq || [];
+			   (function() {
+			       var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+			       mf.src = "//cdn.mouseflow.com/projects/8de4f11f-4e64-4770-a9f2-fd14274a3ace.js";
+			       document.getElementsByTagName("head")[0].appendChild(mf);
+			   })();
+			</script>
+			
+	</body>
 
 	
 
-		<!-- Our FB JS Include Goes here-->
-		<script src="js/facebook/fb.js"></script>
+			<!-- Our FB JS Include Goes here-->
+			<script src="js/facebook/fb.js"></script>
 
 
 	</html>
